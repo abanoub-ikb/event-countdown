@@ -1,0 +1,156 @@
+/* nav bar styling start */
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+ul li{
+    padding: 40px 70px;
+    background-image: linear-gradient(white,white);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size:0 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: 0.5s;
+    cursor: pointer;
+}
+ul li:hover{
+    background-position-x: left;
+    background-size:100% 100%;
+}
+ul li:hover a{
+    color: black;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 500;
+}
+.nav-menu-icon{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 1.5rem;
+    align-items: center;
+    
+}
+.nav-menu-icon i{
+    cursor: pointer;
+    color: black;
+}
+.nav-menu-icon span{
+    color: black;
+    font-size: 1.2rem;
+}
+.nav-links{
+    background-color: black;
+    position: relative;
+}
+.close-icon i {
+    color: red;
+    cursor: pointer;
+}
+
+
+.close-icon{
+  border-bottom:1px solid rgba(255, 255, 255, .5) ;
+}
+
+/* nav bar styling end */
+
+/* header start */
+header{
+    min-height: 75vh;
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer{
+    min-height:75vh;
+    background-color: rgba(214, 46, 51, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+header p{
+    color: white;
+    font-size: 1.5rem;
+}
+/* header end */
+
+/* details section start */
+
+#details .container{
+    background-color: rgba(214, 46, 51, 0.6);
+}
+#details h3{
+    padding: 15px;
+    color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  cursor: pointer;
+}
+#details p{
+    background-color: #ccc;
+    padding: 20px;
+}
+#details p:not(.active p){
+    display: none;
+}
+
+/* details section start */
+
+/* duration section start */
+
+#duration{
+    min-height: 30vh;
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 130%;
+    background-position: center ;
+}
+.duration-layer{
+    min-height: 30vh;
+    background-color: rgba(214, 46, 51, 0.6); 
+    
+}
+.event{
+    min-height: 30vh;
+}
+.box {
+    color: white;
+    padding: 20px 40px;
+    border: 1px solid white;
+    margin: 1.5rem;
+}
+.box p{
+    font-size: 1.2rem;
+}
+.links i {
+    border: 1px solid #777;
+    color: #777;
+    transition: 0.5s;
+    width: 2.5rem ;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.links i:hover{
+    background-color: red;
+    color: white;
+}
