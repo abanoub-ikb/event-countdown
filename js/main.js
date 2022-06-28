@@ -15,7 +15,7 @@ openNav.click(()=>{
         $('.nav-menu-icon').css('display','flex');
     }else{
         navBar.animate({left:`0px`},1000)
-        closeNav.css('display','block');
+        closeNav.css('display','block')
         $('.nav-menu-icon').css('display','none');
     }
 });

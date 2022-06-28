@@ -38,18 +38,14 @@ ul li:hover a{
 .nav-menu-icon{
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
-    margin-left: 1.5rem;
+    padding: 50px 10px;
     align-items: center;
-    
+    box-shadow: 0 4px 17px rgb(0 0 0 / 35%);
+    border-left: 1px solid white;
 }
 .nav-menu-icon i{
     cursor: pointer;
     color: black;
-}
-.nav-menu-icon span{
-    color: black;
-    font-size: 1.2rem;
 }
 .nav-links{
     background-color: black;
@@ -65,6 +61,19 @@ ul li:hover a{
   border-bottom:1px solid rgba(255, 255, 255, .5) ;
 }
 
+@media screen and (max-width:768px) {
+    .nav-menu-icon{
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+        box-shadow: none;
+        font-size: .7rem;
+        border: 2px solid black;
+        
+        padding: 15px 10px;
+    } 
+}
+
 /* nav bar styling end */
 
 /* header start */
@@ -77,6 +86,7 @@ header{
 }
 .layer{
     min-height:75vh;
+    text-align: center;
     background-color: rgba(214, 46, 51, 0.6);
     display: flex;
     justify-content: center;
@@ -96,7 +106,7 @@ header p{
 
 /* details section start */
 
-#details .container{
+#details .deatails-container{
     background-color: rgba(214, 46, 51, 0.6);
 }
 #details h3{
