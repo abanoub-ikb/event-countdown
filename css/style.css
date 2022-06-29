@@ -65,13 +65,16 @@ ul li:hover a{
     .nav-menu-icon{
         position: fixed;
         bottom: 20px;
-        right: 0px;
+        right: 5px;
         box-shadow: none;
         font-size: .7rem;
         border: 2px solid black;
-        
+        background-color: rgba(0, 0, 0, 0.5);
         padding: 15px 10px;
     } 
+    .nav-menu-icon i{
+        color: white;
+    }
 }
 
 /* nav bar styling end */
