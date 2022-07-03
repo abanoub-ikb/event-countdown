@@ -60,38 +60,6 @@ $('#submit').click((e)=>{
 
 // even count down function
 
-// let eventDate = new Date('sep 30,2022 0:0:0').getTime();
-// console.log(eventDate)
-// function countDown(){
-// let dateNow = new Date().getTime();
-// let dateDiff = eventDate -dateNow;
-// let days = Math.floor(dateDiff/1000/60/60/24);
-// let hours = Math.floor(dateDiff/1000/60/60)%24;
-// let mins =  Math.floor(dateDiff/1000/60)%60;
-// let secs = Math.floor(dateDiff/1000)%60;
-// document.getElementById('countDown').innerHTML = `
-// <div class="col-lg-1 col-3  box">
-// <div><p>${days} D</p></div>
-// </div>
-// <div class="col-lg-1  col-3 box">
-// <div><p>${hours<10?'0'+hours:hours} H</p></div>
-// </div>
-// <div class="col-lg-1  col-3  box">
-// <div><p>${mins<10?'0'+mins:mins} M</p></div>
-// </div>
-// <div class="col-lg-1  col-3  box">
-// <div><p>${secs<10?'0'+secs:secs} S</p></div>
-// </div>`;
-
-// if(dateDiff===0){
-//     ('#sold').html(`<span id="sold" class="px-2 bg-danger">Event is Ended</span>`);
-//     clearInterval(countDown);
-// };
-// };
-// setInterval(countDown,1000);
-
-
-
 let eventDate = new Date('sep 30,2022 0:0:0').getTime();
 
 let countDown = setInterval(function (){
